@@ -1,6 +1,6 @@
 {
   "name": "mapbox-gl-regex-query",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Query source data using regex",
   "main": "dist/mapbox-gl-regex-query.js",
   "author": "Kristofor Carle <kris@maphubs.com>",
