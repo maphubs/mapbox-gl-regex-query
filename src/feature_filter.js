@@ -58,7 +58,7 @@ function compileRegexOp(property, value) {
     const left = compilePropertyReference(property);
     const right = value;
     return `${'function(left, right) {' +
-    'return left.toString().match(right);' +
+    'if(!left) return false; return left.toString().match(right);' +
     '}('}${left}, ${right})`;
 }
 
