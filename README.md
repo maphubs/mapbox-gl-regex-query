@@ -19,10 +19,22 @@ npm install mapbox-gl-regex-query
 ``` 
 
 
+or to use directly in the browser download `dist/mapbox-gl-regex-query.js` from this repo
+
 ## Usage
 
 ```js
-require('mapbox-gl-regex-search').querySourceFeatures(sourceID, filter, map);
+var RegexQuery = require('mapbox-gl-regex-search');
+```
+or in the browser
+```html
+<script src="mapbox-gl-regex-query.js"></script>
+```
+
+The use by by calling `querySourceFeatures`
+
+```js
+RegexQuery.querySourceFeatures(sourceID, filter, map);
 ```
 
 Use `~=` to active the regex filter. It also works in `any` and `all`  filters.
@@ -30,13 +42,13 @@ Use `~=` to active the regex filter. It also works in `any` and `all`  filters.
 Example: 
 
 ```js
-var MapboxGLRegexSearch = require('mapbox-gl-regex-search');
+
 var map = new mapboxgl.Map({
   /* ... */
 });
 
 var onSearchButtonClick = function(){
-    var results = MapboxGLRegexSearch.querySourceFeatures('diners-drive-ins-and-dives',
+    var results = RegexQuery.querySourceFeatures('diners-drive-ins-and-dives',
     {
       sourceLayer: 'locations',
       filter: ['all',
