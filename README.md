@@ -4,19 +4,20 @@ Query source data using a regex filter
 
 This is an unofficial plugin, and is not affliated with Mapbox. 😇
 
-🚧Tested with v0.37.0, this is not using the public API and will likely break between versions🚧
+🚧This is not using the public API and will likely break between versions🚧
 
-This is my temporary workaround until cross-platform regex is supported directly in mapbox-gl, I recommend helping with that directly if you can, see: https://github.com/mapbox/mapbox-gl-js/issues/4089 
+* Version 0.1.2 = tested with mapbox-gl-js v0.37.0
+* Version 0.2.0 = tested with mapbox-gl-js v0.43.0
+
+
+This is my temporary workaround until regex is supported directly in mapbox-gl-js, I recommend helping with that directly if you can, see: https://github.com/mapbox/mapbox-gl-js/issues/4089 
 
 ## Installation
 
 ```sh
 npm install mapbox-gl-regex-query
 ``` 
-or 
-```sh
-yarn add mapbox-gl-regex-query
-```
+
 
 ## Usage
 
