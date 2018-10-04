@@ -1,6 +1,6 @@
 {
   "name": "mapbox-gl-regex-query",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Query source data using regex",
   "main": "dist/mapbox-gl-regex-query.js",
   "author": "Kristofor Carle <kris@maphubs.com>",
@@ -33,10 +33,7 @@
     "build-dev": "mkdir -p dist && browserify src/index.js --debug --ignore-transform unassertify --standalone RegexQuery > dist/mapbox-gl-regex-query-dev.js",
     "build-min": "mkdir -p dist && browserify src/index.js --debug --plugin [minifyify --map mapbox-gl-regex-query.js.map --output dist/mapbox-gl-regex-query.js.map] --standalone RegexQuery | derequire > dist/mapbox-gl-regex-query.js"
   },
-  "dependencies": {
-    "gl": "^4.0.4",
-    "jsdom": "^9.11.0"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "mapbox-gl": ">=0.37.0"
   },
